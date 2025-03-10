@@ -3,7 +3,7 @@
 This is a **Python implementation** of the classic **2048 game** in a Jupyter Notebook. The game features a **4×4 grid**, where tiles with numbers **merge when moved in the same direction**. The goal is to **reach 2048** before running out of moves.
 
 ## 🛠 Features
-✅ Randomly initializes with **two "2" numbers**  
+✅ Randomly initializes with **two "2" tiles**  
 ✅ Supports **w (up), s (down), a (left), d (right)** for movement  
 ✅ **Tiles merge** when moved in the same direction  
 ✅ **Game over detection** when no moves are possible  
@@ -49,7 +49,7 @@ pip install notebook numpy
 ### **3️⃣ Clone the Repository**
 If you haven't already, clone this project from **GitHub**:
 ```sh
-git clone https://github.com/your-username/2048-game.git
+git clone https://github.com/heathclief0402/2048.git
 cd 2048-game
 ```
 
@@ -69,13 +69,13 @@ jupyter notebook
 The game logic is implemented in `helper_2048.py`. Below are key functions:
 
 ### **🔹 `initialize_game()`**
-Creates a **4×4 empty board** and adds **two random "2" numbers**.
+Creates a **4×4 empty board** and adds **two random "2" tiles**.
 
 ### **🔹 `add_new_number(board)`**
-Places a **new "2" numbers** in a random empty space.
+Places a **new "2" tiles** in a random empty space.
 
 ### **🔹 `move_left(board)`**
-Shifts all numbers **to the left**, merging identical ones.
+Shifts all tiles **to the left**, merging identical ones.
 
 ### **🔹 `move_right(board)`**
 Flips the board, calls `move_left()`, and flips it back.
